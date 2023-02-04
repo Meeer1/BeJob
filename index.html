@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario validado</title>
+ <link rel="stylesheet" href="style.css">
+ 
+   
+</head>
+
+<body>
+
+    <form action="" onsubmit="return validarFormulario()">
+        <h1>Create Account</h1>
+        <label> Nombre </label><br><input type="text" id="nombre" name="nombre" onblur="validarCampoTexto()"class="" ><br><span id="mensaje_nombre"class="tamaño_de_mensaje"></span>
+        <br>
+        <label> Email </label><br><input type="email" id="email" name="email" onblur="validarEmail()" class=""><br><span id="mensaje_email" class="tamaño_de_mensaje"></span>
+        <br>
+        <label>Clave</label><br><input type="password" id="password" name="password" onblur="validarPassword();verificarPasswords()" class=""><br><span id="mensaje_password" class="tamaño_de_mensaje"></span>
+        <br>
+        <label>Confirme su clave </label><br><input type="password" id="password2" name="password2" onblur="verificarPasswords()" class=""><br><span id="mensaje_password2" class="tamaño_de_mensaje"></span>
+        <br>
+        <br>
+        
+        
+
+
+
+
+        <input id="boton" type="submit" value="Enviar">
+
+
+    </form>
+    
+    <script src="index.js"></script>
+</body>
+
+</html>
